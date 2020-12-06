@@ -1,0 +1,14 @@
+virt-install \
+ --name openvpn-server \
+ --disk pool=kvm_pool,format=qcow2,size=20 \
+ --vcpus 2 \
+ --ram 4096 \
+ --os-type linux \
+ --os-variant fedora33 \
+ --network bridge=br-islt-vm01 \
+ --graphics none \
+ --console pty,target_type=serial \
+ --location /tmp/Fedora-Server-dvd-x86_64-33-1.2.iso \
+ --initrd-inject /tmp/ks.cfg \
+ --extra-args \
+  'inst.ks=file:/ks.cfg console=ttyS0,115200n8 serial'

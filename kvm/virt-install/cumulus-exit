@@ -1,0 +1,11 @@
+virt-install \
+ --name=cumulus-exit \
+ --vcpus=1 \
+ --ram=1024 \
+ --network bridge=br-nat-exit \
+ --network bridge=br-nat-exit \
+ --network bridge=br-islt-rt \
+ --graphics none \
+ --console pty,target_type=serial \
+ --import \
+ --disk  path=/var/lib/libvirt/images/kvm_pool/cumulus-exit.qcow2,format=qcow2

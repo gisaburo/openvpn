@@ -1,0 +1,5 @@
+cp /home/fedora/cumulus-linux-4.2.1-vx-amd64-qemu.qcow2 /var/lib/libvirt/images/kvm_pool/cumulus-exit.qcow2
+cp /home/fedora/cumulus-linux-4.2.1-vx-amd64-qemu.qcow2 /var/lib/libvirt/images/kvm_pool/cumulus01.qcow2
+cp /home/fedora/cumulus-linux-4.2.1-vx-amd64-qemu.qcow2 /var/lib/libvirt/images/kvm_pool/cumulus02.qcow2
+cp /home/fedora/Fedora-Server-dvd-x86_64-33-1.2.iso /tmp/
+cp /home/fedora/ks.cfg /tmp/

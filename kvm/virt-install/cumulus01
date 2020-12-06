@@ -1,0 +1,11 @@
+virt-install \
+ --name=cumulus01 \
+ --vcpus=1 \
+ --ram=1024 \
+ --network bridge=br-nat-exit \
+ --network bridge=br-islt-rt \
+ --network bridge=br-islt-vm01 \
+ --graphics none \
+ --console pty,target_type=serial \
+ --import \
+ --disk  path=/var/lib/libvirt/images/kvm_pool/cumulus01.qcow2,format=qcow2

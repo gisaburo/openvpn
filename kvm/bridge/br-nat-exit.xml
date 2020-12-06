@@ -1,0 +1,7 @@
+<network>
+  <name>br-nat-exit</name>
+  <forward mode='nat'/>
+  <bridge name='br-nat-exit' stp='on' delay='0'/>
+  <ip address='172.16.100.1' netmask='255.255.255.0'>
+  </ip>
+</network>

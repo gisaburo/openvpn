@@ -1,0 +1,4 @@
+<network>
+  <name>br-islt-vm01</name>
+  <bridge name='br-islt-vm01' />
+</network>
